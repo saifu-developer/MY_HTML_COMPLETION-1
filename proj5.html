@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg form</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table cellpadding="10">
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" name="fname" id="fname" /></td>
+          </tr>
+          <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td><input type="text" name="lname" id="lname" /></td>
+          </tr>
+          <tr>
+            <td><label for="mob">Mobile Number</label></td>
+            <td><input type="tel" name="mob" id="mob" /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="mail">Email</label></td>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="">password</label></td>
+            <td><input type="password" name="password" id="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="cpassword">confirm password</label></td>
+            <td><input type="password" name="cpassword" id="cpassword" /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input type="number" name="age" id="age" min="18" max="85" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="g">Gender</label></td>
+            <td>
+              <input type="radio" name="g" value="MALE" /> Male
+              <input type="radio" name="g" value="FEMALE" /> Female
+              <input type="radio" name="g" value="OTHERS" /> Others
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="select country">Select country</label></td>
+            <td>
+              <select name="select country" id="select country">
+                <option value="IND">INDIA</option>
+                <option value="US">RUSSIA</option>
+                <option value="RS">GERMANY</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="upload">Upload Your Resume</label></td>
+            <td><input type="file" name="upload" id="upload" /></td>
+          </tr>
+        </table>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table cellpadding="10">
+          <tr>
+            <td><label for="select Course">Select country</label></td>
+            <td>
+              <select name="select Course" id="select Course">
+                <option value="java">JAVA FULL STACK DEVELOPER</option>
+                <option value="py" disabled>PYTHON FULL STACK DEVELOPER</option>
+                <option value="fsd">MERN FULL STACK DEVELOPER</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mode">Course Mode</label></td>
+            <td>
+              <input type="radio" name="mode" value="online" /> ONLINE
+              <input type="radio" name="mode" value="offline" /> OFFLINE
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="in">Institute name</label>
+            </td>
+            <td>
+              <input type="text" name="in" id="in" placeholder="TAP ACADEMY" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="comments">Comments</label></td>
+
+            <td>
+              <textarea
+                name="comments"
+                id="comments"
+                rows="5"
+                cols="40"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <label for="feedback">FEEDBACK</label><br />
+      <textarea name="feedback" id="feedback" rows="5" cols="40"></textarea>
+      <br /><br /><br />
+      <hr />
+      <hr />
+      <br /><br /><br />
+    </form>
+  </body>
+</html>
